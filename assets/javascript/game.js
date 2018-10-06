@@ -91,10 +91,7 @@ document.onkeyup = function (event) {
 
     if (wordLength.toString() === correctGuesses.toString()) {
         wins++;
-        setTimeout(() => {
-            alert("You Win!");
-        }, 1000);
-       
+        alert("You Win!");
         document.getElementById("wins-text").innerHTML = wins;
         changingImage();
         startGame();
