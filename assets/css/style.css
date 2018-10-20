@@ -20,10 +20,12 @@ h1 {
     font-family: 'Notable', sans-serif;
     color: crimson;
     text-align: center;
+    font-size: 50px;
 }
 
 h3 {
     text-align: center;
+    font-size: 32px;
 }
 .text {
     text-align: center;
