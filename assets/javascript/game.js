@@ -35,6 +35,7 @@ function startGame() {
     console.log(correctGuesses);
     $(".container").on("click", function(){
         $("#textinput").focus();
+        console.log("clicked");
     })
 }
 // function to check if letter is used, or in the answer.
