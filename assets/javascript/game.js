@@ -33,6 +33,9 @@ function startGame() {
     document.getElementById("wins-text").innerHTML = wins;
     document.getElementById("losses-text").innerHTML = lose;
     console.log(correctGuesses);
+    $(".container").on("click", function(){
+        $("#textinput").focus();
+    })
 }
 // function to check if letter is used, or in the answer.
 function varifyGuess(letter) {
