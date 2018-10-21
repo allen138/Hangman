@@ -36,3 +36,8 @@ h3 {
     height: 250px;
     width: 250px;
 }
+input {
+    background-color: black;
+    color: black;
+    border: none;
+}
