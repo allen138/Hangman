@@ -1,6 +1,6 @@
 
 // global variables that hold data for the game.. 
-var game = ["metallica", "led zeppelin", "foo fighters", "jimi hendrix", "pink floyd", "kyuss", "qotsa", "beatles", "hangman"];
+var game = ["metallica", "zeppelin", "foofighters", "hendrix", "pinkfloyd", "kyuss", "qotsa", "beatles", "hangman", "aerosmith", "zztop", "acdc", "greenday", "godsmack", "failure"];
 var answer = "";
 var wordLength = [];
 var numBlanks = 0;
@@ -81,6 +81,18 @@ function changingImage() {
         document.getElementById("img").src = "./assets/images/neatles.jpg";
     } if (answer === game[8] && wordLength.toString() === correctGuesses.toString()) {
         document.getElementById("img").src = "./assets/images/hangman.png";
+    } if (answer === game[9] && wordLength.toString() === correctGuesses.toString()) {
+        document.getElementById("img").src = "./assets/images/aerosmith.jpg";
+    } if (answer === game[10] && wordLength.toString() === correctGuesses.toString()) {
+        document.getElementById("img").src = "./assets/images/zztop.jpg";
+    } if (answer === game[11] && wordLength.toString() === correctGuesses.toString()) {
+        document.getElementById("img").src = "./assets/images/acdc.jpg";
+    } if (answer === game[12] && wordLength.toString() === correctGuesses.toString()) {
+        document.getElementById("img").src = "./assets/images/greenday.jpg";
+    } if (answer === game[13] && wordLength.toString() === correctGuesses.toString()) {
+        document.getElementById("img").src = "./assets/images/godsmack.jpg";
+    } if (answer === game[14] && wordLength.toString() === correctGuesses.toString()) {
+        document.getElementById("img").src = "./assets/images/failure.jpg";
     }
 }
 //This function will run whenever a key is pressed.
