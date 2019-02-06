@@ -39,6 +39,12 @@ function startGame() {
 }
 // function to check if letter is used, or in the answer.
 function varifyGuess(letter) {
+    var regex = /[a-z]/g;
+    if (letter.match(regex)) {
+        console.log("letter accepted");
+    } else {
+        return;
+    }
     for (i = 0; i < usedLetter.length; i++) {
         if (letter == usedLetter[i]) {
             return;
