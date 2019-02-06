@@ -37,7 +37,12 @@ h3 {
     width: 250px;
 }
 input {
+    display: hidden;
     background-color: black;
     color: black;
     border: none;
+}
+.modal-text{
+    color: black;
+    text-align: center;
 }

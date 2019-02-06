@@ -33,12 +33,17 @@ function startGame() {
     document.getElementById("wins-text").innerHTML = wins;
     document.getElementById("losses-text").innerHTML = lose;
     console.log(correctGuesses);
-    $(".container").on("click", function(){
+    $(".container").on("click", function () {
         $("#textinput").focus();
     })
 }
 // function to check if letter is used, or in the answer.
 function varifyGuess(letter) {
+    for (i = 0; i < usedLetter.length; i++) {
+        if (letter == usedLetter[i]) {
+            return;
+        }
+    }
     var isLetterInWord = false;
 
     for (let i = 0; i < numBlanks; i++) {
@@ -105,17 +110,25 @@ document.onkeyup = function (event) {
     document.getElementById("letters-guessed").innerHTML = usedLetter.join(" ");
 
     if (wordLength.toString() === correctGuesses.toString()) {
-        wins++;
-        alert("You Win!");
-        document.getElementById("wins-text").innerHTML = wins;
-        changingImage();
-        startGame();
+        setTimeout(function () {
+            wins++;
+            //alert("You Win!");
+            $("#win-modal").modal("toggle");
+            document.getElementById("wins-text").innerHTML = wins;
+            changingImage();
+            startGame();
+        }, 500);
+
     }
     else if (attempsLeft === 0) {
-        lose++;
-        alert("You Lose!");
-        document.getElementById("losses-text").innerHTML = lose;
-        startGame();
+        setTimeout(function () {
+            lose++;
+            //alert("You Lose!");
+            $("#lose-modal").modal("toggle");
+            document.getElementById("losses-text").innerHTML = lose;
+            startGame();
+        }, 500);
+
     }
 
 

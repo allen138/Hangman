@@ -11,7 +11,7 @@ The almighty Hangman Game! This is a word guessing game with a theme of Rock n' 
 - I began by setting up a basic HTML page. First div is the header and in side is the title, theme, and start instructions. From there I set up my container that held most of the content for the game. I used bootstrap for a basic template container, row, and column.
     - First row contains the image or album cover of the artist.
     - Second row contains the wins, loses, and current word. The current word is displayed with underscores for each letter. Under the word to be guessed is the number of guesses remaining, and which letters have been guessed. 
-- On to the **JavaScript**.
+- **JavaScript**
     - I began by creating all the words that could be guessed. Each word is a string in an array and that array is set to the variable game. I also had a few initial variables which were answer, wordLength, numBlanks, correctGuesses, and usedLetter. I also created the variables to keep score which were wins, lose, attempsLeft.
     - **startGame()** I created a startGame function that chose a random word from the game array by using math.floor and math.random multiplied by the length of the array. The answer returned will be the indicie of the game array which will be the current answer. To create the underscores I took the answer and used the method split("").
     ```javascript
