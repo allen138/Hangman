@@ -46,3 +46,6 @@ input {
     color: black;
     text-align: center;
 }
+.modal-content{
+    background-color:rgba(217, 216, 230, 0.959)
+}
