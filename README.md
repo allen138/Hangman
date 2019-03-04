@@ -1,4 +1,5 @@
 # Hangman
+![game](assets/images/hangmanSS.png)
 ## Overview
 The almighty Hangman Game! This is a word guessing game with a theme of Rock n' Roll bands.
 - You have 10 tries to guess each letter for the secret word shown.
